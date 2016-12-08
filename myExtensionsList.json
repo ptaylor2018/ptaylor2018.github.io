@@ -7,7 +7,7 @@
     "mikailcolak.brackets-color-picker": true,
     "brackets-css-color-preview": true,
     "zaggino.brackets-git": true,
-    "ivogabe.icons": true,
+    "ivogabe.icons": false,
     "technet.clipbox": true,
     "brackets-emmet": true,
     "milosh86.extensions-bulk-installer": false,
