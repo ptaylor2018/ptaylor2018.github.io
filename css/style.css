@@ -1,0 +1,592 @@
+/***************************
+****************************
+Reset Styles
+****************************
+***************************/
+
+@import 'normalize.css';
+
+/* change all elements to use border-box */
+
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/***************************
+****************************
+ Global Styles
+****************************
+***************************/
+
+body{
+    overflow:hidden;
+
+}
+.button{
+    background-color: black;
+}
+/***************************
+****************************
+ mobile first, y'all
+****************************
+***************************/
+
+/***************************
+ Landing
+***************************/
+
+a {
+    text-decoration: none !important; /*nothing blue or purple! no underlines!*/
+}
+#landing {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/background.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.name {
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 7.7294686vw; /*there's no such thing as too many significant figures*/
+    margin-top: -3.74396vw;
+    font-weight: 300;
+}
+
+#logo {
+    width: 63.76811594vw;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logoStuff { /* name and logo*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vw;
+    display: none;
+}
+
+.contact-link {
+    padding: .5vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.4648438vw;
+    width: 13vw;
+    text-align: center;
+    display: block;
+}
+
+.spacer{
+    background-color: white;
+    width: .2vw;
+    display: none;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: .03864734vw;
+    text-align: center;
+}
+
+.nav-item {
+    font-family: 'Roboto Slab', sans-serif;
+    color: gray;
+    margin-bottom: 5.79710145vw;
+    font-size: 4.83091787vw;
+}
+
+#down-arrow {
+    height: 5vw;
+}
+
+/***************************
+ about
+***************************/
+#about-me {
+    background-color: #636363;
+    background: ; /*background image goes here*/
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    font-size: 55px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: white;
+    padding-left: 21.4975845vw;
+    padding-top: 16.666666667vw;
+}
+
+.about-text{
+    color: white;
+    font-family: 'Raleway', serif;
+    font-weight: 200;
+    padding-left: 21.4975845vw;
+    padding-top: 15.70048309vw;
+    padding-bottom: 12.56038647vw;
+    padding-right: 23.67149758vw;
+    margin: 0;
+    font-size: 22px;
+}
+
+/*stuff for individual topics*/
+#design-style {
+    color: #35a7ce;
+}
+
+#coding-style {
+    color: #EB5937;
+}
+
+#stem-style {
+    color: #36C633;
+}
+
+#music-style {
+    color:#770eb7;
+}
+
+#leadership-style {
+    color:#f5c813;
+}
+
+#more-style {
+
+}/***************************
+Subject general things
+***************************/
+.subjectspace{
+
+    height: 178.7439614vw;
+}
+.nameplate{
+    top: 6.640625vw;
+    width: 50.24154589vw;
+    height: 11.111111111vw;
+
+    position: relative;
+}
+.triangle{
+    position: relative;
+    left: 50.24154589vw;
+    top: -4.45vw;
+    width: 0;
+    height: 0;
+
+    border-right: 11.11111111111111111111111vw solid transparent;
+}
+.section-header{
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    position: relative;
+    left: 15.33203125vw;
+    font-size: 7.97101449vw;
+    top: .5vw;
+}
+.description{
+    width: 59.90338164vw;
+    position: relative;
+    left: 17.39130435vw;
+    top: 1.2vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.10628019vw;
+    height: 30vw;
+}
+.subsection_button{
+    background-color: black;
+    color: white;
+    margin-bottom: 1vw;
+}
+.slideshow{
+    position: relative;
+    width: 95vw;
+    height: 30vw;
+
+}
+.spacer-2{
+    width: 100%;
+    height: 8vw;
+    background-color: #EB5937;
+}
+/***************************
+design
+***************************/
+#design{
+    background-color: #D3CCC1;
+}
+#designplate{
+    background-color: #35a7ce;
+}
+#designtriangle{
+    border-top: 11.11111111111111vw solid #35a7ce;
+}
+/***************************
+coding
+***************************/
+#coding{
+    background-color: #d3ccc1;
+}
+#codingplate{
+    background-color: #d13419;
+}
+#codingtriangle{
+    border-top: 11.111111111vw solid #d13419;
+}
+/***************************
+STEM
+***************************/
+#stem{
+    background-color:#D3CCC1;
+}
+#stemplate{
+    background-color: #36C633;
+}
+#stemtriangle{
+    border-top: 11.111111111111111vw solid #36C633;
+
+}
+/***************************
+Music
+***************************/
+#music{
+    background-color:#D3CCC1;
+}
+#musicplate{
+    background-color: #770eb7;
+}
+#musictriangle{
+    border-top: 11.111111111vw solid #770eb7;
+}
+/***************************
+leadership
+***************************/
+#leadership{
+    background-color:#D3CCC1;
+}
+#leadershipplate{
+    background-color: #f5c813;
+}
+#leadershiptriangle{
+    border-top: 11.111111111vw solid #f5c813;;
+}
+#leader-header{
+    left:8.5vw;
+}
+/***************************
+****************************
+desktop
+****************************
+***************************/
+@media all and (min-width: 460px) {
+    /***************************
+     Landing
+    ***************************/
+    #logoStuff {
+        flex-direction: row;
+        transform: translateY(10%);
+
+    }
+    /*reordered for desktop*/
+    #logo {
+        order: 1;
+        width: 28.90625vw;
+    }
+    .name-2 {
+        order: 3;
+    }
+    .name {
+        font-size: 3.4179688vw;
+        margin-top: 3vw;
+    }
+    #nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 1.953125vw;
+        top: 4.58984375vw;
+        margin-top: 0vw;
+        text-align: right;
+    }
+    .nav-item {
+        margin-bottom: 1.3671875vw;
+        font-size: 1.46484375vw;
+    }
+
+
+    .nav-item::after {
+	    background: gray;
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    content: '';
+	    width: 100%;
+	    height: 1px;
+	    opacity: 0;
+
+	    transition: opacity 0.3s, transform 0.3s;
+	    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	    transform: translateY(-10px);
+	    -moz-transform: translateY(-10px);
+	    -webkit-transform: translateY(-10px);
+    }
+
+    .nav-item:hover::after,
+    .nav-item:focus::after {
+	    opacity: 1;
+
+	    transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    -webkit-transform: translateY(0px);
+    }
+    .contact-list{
+        display: flex;
+    }
+    .down-arrow{
+        position: relative;
+        bottom: -5vw;
+    }
+    #down-arrow {
+    height: 3vw;
+
+    }
+    .effect3 a {
+	color: #c1add8;
+	overflow: hidden;
+	padding: 0 5px;
+	height: 1em;
+
+    }
+
+    .contact-link {
+
+        display: block;
+	    transition: transform 0.3s;
+	    -moz-transition: -moz-transform 0.3s;
+	    -webkit-transition: -webkit-transform 0.3s;
+    }
+
+    .contact-link::before {
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+        color: white;
+        font-size: 1.4648438vw;
+        text-align: center;
+	    position: absolute;
+	    top: 100%;
+	    content: attr(data-hover);
+
+	    transform: translate3d(0,0,0);
+	    -moz-transform: translate3d(0,0,0);
+	    -webkit-transform: translate3d(0,0,0);
+        z-index: -1;
+    }
+    .contact-link:hover,
+    .contact-link:focus {
+	    transform: translateY(-100%);
+	    -moz-transform: translateY(-100%);
+	    -webkit-transform: translateY(-100%);
+
+    }
+
+    /***************************
+     about
+    ***************************/
+
+    #about-me{
+        flex-direction: row;
+    }
+    .hero{
+        padding-left: 5.7617188vw;
+        padding-top: 8.40625vw;
+        padding-bottom: 8.40625vw;
+    }
+    .about-text{
+        font-size: 30px;
+        padding: 0;
+        padding-top: 12.84375vw;
+        padding-bottom: 10.84375vw;
+        padding-left: 10vw;
+    }
+    /***************************
+    Subject general things
+    ***************************/
+    .subjectspace{
+
+        height: 56.34765625vw;
+    }
+    .nameplate{
+        top: 6.640625vw;
+        width: 27.4414063vw;
+        height: 4.5898438vw;
+
+        position: relative;
+    }
+    .triangle{
+        position: relative;
+        left: 27.4414063vw;
+        top: 2.0507812vw;
+        width: 0;
+	    height: 0;
+
+	    border-right: 4.5898438vw solid transparent;
+    }
+    .section-header{
+        color: white;
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 300;
+        position: relative;
+        left: 15.33203125vw;
+        font-size: 3.22265625vw;
+        top: .5vw;
+    }
+
+    .description{
+        width: 25.5859375vw;
+        position: relative;
+        left:3.80859375vw;
+        top: 1.2vw;
+        font-family: 'Raleway', sans-serif;
+        font-size:1.5671875vw;
+    }
+    .subsection_button{
+        background-color: black;
+        color: white;
+        margin-bottom: 1vw;
+    }
+    .slideshow{
+        position: relative;
+        width: 50vw;
+        top: -35vw;
+        left: 20vw;
+    }
+    .spacer-2{
+        height: 3vw;
+    }
+    /***************************
+    design
+    ***************************/
+    #designplate{
+
+    }
+    #designtriangle{
+        border-top: 4.5898438vw solid #35a7ce;
+    }
+    /***************************
+    coding
+    ***************************/
+    #codingplate{
+
+    }
+    #codingtriangle{
+        border-top: 4.5898438vw solid #d13419;
+    }
+    /***************************
+    STEM
+    ***************************/
+    #stemplate{
+
+    }
+    #stemtriangle{
+        border-top: 4.5898438vw solid #36C633;
+    }
+    /***************************
+    Music
+    ***************************/
+    #musicplate{
+
+    }
+    #musictriangle{
+        border-top: 4.5898438vw solid #770eb7;
+    }
+    /***************************
+    leadership
+    ***************************/
+    #leadershipplate{
+
+    }
+    #leadershiptriangle{
+        border-top: 4.5898438vw solid #f5c813;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.mySlides_coding {
+
+}
+
+.mySlides {
+    object-fit: contain;
+    max-height:100%;
+    max-width:100%;
+}
+#contact-zone{
+    background-color: black;
+}
+.contact-hero{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: white;
+    padding-top: 5vw;
+}
+#email-button{
+    margin: auto;
+    width: 150px;
+    height: 80px;
+    display: block;
+
+}
+.elsewhere{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 11px;
+}
+.elsebox{
+    width:120px;
+    height: 105px;
+    background-color: white;
+    margin: 10px;
+}
+.elsetext{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: -13px;
+}
