@@ -2,174 +2,277 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Patrick Taylor</title>
+
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script type='text/javascript' src='js/script.js'></script>
+    <script type='text/javascript' src='js/slideshow.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300i,400" rel="stylesheet">
+    <script src="https://use.fontawesome.com/85cd217bf2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>my portfolio page</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet">
+    <!--TODO add google analytics-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
 </head>
 
 <body>
-    <div class="anchor" id="home"></div>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Tilted Hills Studios</a>
+
+    <div class="container-main" id="landing"><!--landing portion -->
+        <div class="container-main">
+            <div id="logoStuff">
+                <img src="images/logo.svg" alt="My Logo" id="logo" />
+                <h1 class="name name-1">Patrick</h1>
+                <h1 class="name name-2">Taylor</h1>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav pull-right" role="navigation">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cprojects">Coding Projects</a></li>
-                    <li><a href="#oprojects">Other Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div id="nav">
+                <a href="#about-text" class="nav-item">About</a>
+                <a href="images/resume.pdf" target="_blank" class="nav-item">Resume</a>
+                <a href="#contact-zone" class="nav-item">Contact</a>
+                <a href="https://www.behance.net/ptlegoman44d5" class="nav-item">Portfolio</a>
             </div>
+            <div class="contact-list"> <!--Only visible on desktop-->
+                <a href="https://www.facebook.com/profile.php?id=100010699749180" class="contact-link" data-hover="Patrick Taylor"><i>Facebook</i></a>
+                <div class="spacer"></div>
+                <a href="https://www.instagram.com/patarack_/" class="contact-link" data-hover="@patarack_"><i>Instagram</i></a>
+                <div class="spacer"></div>
+                <a href="https://www.linkedin.com/in/patrick-taylor-647753124/" class="contact-link" data-hover="Patrick Taylor"><i>LinkedIn</i></a>
+                <div class="spacer"></div>
+                <a href="https://github.com/ptaylor2018" class="contact-link" data-hover="ptaylor2018"><i>GitHub</i></a>
+                <div class="spacer"></div>
+                <a href="https://www.freecodecamp.com/ptaylor2018" class="contact-link" data-hover="ptaylor2018"><i>FreeCodeCamp</i></a>
+            </div>
+            <a href="#">
+            <div class="down-arrow" id="here">
+                <img src="images/arrow.svg" alt="Down" id="down-arrow">
+            </div>
+            </a>
         </div>
-    </nav>
-    <div class="jumbotron jumbotron-back container-fluid my-container">
-        <h1 class="text-center">Tilted Hills Studios
-  </h1>
-        <img src="http://www.designers-revolution.com/wp-content/uploads/2013/07/Colorful-Wave-Pattern-vector.jpg">
     </div>
-    <div class="anchor about-sec" id="about"></div>
-    <div class="container-fluid ">
-        <h2 class="text-center"> About me </h2>
-        <div class="row container">
-            <div class="col-xs-4 text-center">
-                <img class="profile-pic" src="https://lh3.googleusercontent.com/-r6cKxuOZgMw/VkkgNWcqKqI/AAAAAAAAACA/jKcd7UxQ2M0uGFXe-74_Ifzs7D2aQrJjwCKgB/w140-h140-p/profile.jpg">
-            </div>
-            <div class="col-xs-8 about-block well">
-                <h4> Hi, my name is Patrick Taylor and I'm studying web development and coding with the help of <a href="https://www.freecodecamp.com">FreeCodeCamp</a> and other web resources. In addition to programming, I'm also into math, electronics, robotics, and music. Here you'll find not only a collection of my code endeavors but also my forays into graphic design, math proof, and musical composition, amongst other things. Check it out!
+    <div id="about-me">
+        <div>
+        <h1 class="hero">Hey, <br /> I'm <br />  Patrick</h1>
+        </div>
+        <div>
+        <h2 class="about-text" id="about-text">Here, you'll find my adventures into
+            <span><a href="#design" id="design-style" class="area-link">design</a></span>,
+            <span><a href="#coding" id="coding-style" class="area-link">coding</a></span>,
+            <span><a href="#stem" id="stem-style" class="area-link">STEM</a></span>,
+            <span class="area-link"><a href="#music" id=music-style class="area-link">music</a></span>,
+             and
+        <span id="more-style">more</span>. So go ahead.
+        <br />Dive right in.</h2>
+        </div>
     </div>
-  </div>
-</div>
-<div class="anchor about-sec" id="cprojects"></div>
-  <div class="container-fluid cprojects">
-    <h2 class="text-center">Coding Projects</h2>
-    <div class="row">
-      <div class="col-xs-6 col-md-3 ">
-    <a href="http://codepen.io/ptaylor2018/pen/NAvoXV" target="_blank" class="thumbnail">
-      <img class= "img-responsive " src="https://i.gyazo.com/485c90f11113615b29dc605ac0f095b9.png" alt="Claude Shannon Tribue Page">
-     <div class="caption text-center">Claude Shannon: A Tribute</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      <div class="col-xs-6 col-md-3">
-    <a href="#"  class="thumbnail">
-      <img class= "img-responsive" src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg" alt="Come back soon!">
-     <div class="caption text-center">Future Project</div>
-    </a>
-  </div>
-      
+    <div class="spacer-2"></div>
+    <div class="subjectspace" id="design">
+        <div class="nameplate" id=designplate><h1 class="section-header">Design</h1></div>
+        <div class="triangle" id ="designtriangle"></div>
+        <div>
+        <div class="text_design">
+        <div class="description"><p>I've spent the last year honing my design skills, doing work for my school's magazine as well as fun side projects. I've delved into 3D modeling. I'm also open for commisions. Check out my Behance for more! </p>
+        <a href="https://www.behance.net/ptlegoman44d5"><div class="subsection_button subsection_button_design">Behance</div></a>
+        <a href="https://www.thingiverse.com/ptlegoman/about"><div class="subsection_button subsection_button_design">Thingiverse</div></a>
+        <a href="https://dribbble.com/ptaylor2018"><div class="subsection_button subsection_button_design">Add me on Dribbble!</div></a>
+        <a href="#contact-zone"><div class="subsection_button subsection_button_design">Contact</div></a>
+        </div>
+        </div>
+        <div class="w3-content w3-display-container slideshow image_design">
+            <img class="mySlides_design mySlides" src="images/super-mario.png" style="width:100%">
+            <img class="mySlides_design mySlides" src="images/3dprint.jpg" style="width:100%">
+            <img class="mySlides_design mySlides" src="images/cabsurv.png" style="width:100%">
+            <img class="mySlides_design mySlides" src="images/cabmag.png" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs_design(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs_design(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex_design = 1;
+            showDivs_design(slideIndex_design);
+
+            function plusDivs_design(n) {
+                showDivs_design(slideIndex_design += n);
+            }
+
+            function showDivs_design(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides_design");
+                    if (n > x.length) {
+                        slideIndex_design = 1;
+                    }
+                if (n < 1) {
+                    slideIndex_design = x.length;
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex_design-1].style.display = "block";
+            }
+        </script>
+        </div>
     </div>
-  </div>
-  <div  class="anchor about-sec" id="oprojects"></div>
-  <div class="oprojects container-fluid">
-    <h2 class="text-center">Other Projects</h2>
-    <div class="row">
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
-    <div class="col-xs-6 col-md-3 ">
-    <a href="#"  class="thumbnail oprojects-thumb">
-      <img class= "img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Come back soon!">
-     <div class="caption text-center ">Future Project</div>
-    </a>
-  </div>
+    <div class="spacer-2"></div>
+    <div class="subjectspace" id="coding">
+        <div class="nameplate" id=codingplate><h1 class="section-header">Coding</h1></div>
+        <div class="triangle" id ="codingtriangle"></div>
+        <div>
+        <div class="text_coding">
+        <div class="description"><p>I've also began to learn to code. I built this whole site! My github is where you can find most of my work. Be sure to check out my github, as well as my Junior reaserch project. I have experience in Python, Java, Javascript, HTML, CSS, and a tad bit of C++.</p>
+        <a href="https://github.com/ptaylor2018"><div class="subsection_button subsection_button_coding">GitHub</div></a>
+        <a href="https://codepen.io/ptaylor2018/"><div class="subsection_button subsection_button_coding">CodePen</div></a>
+        <a href="https://docs.google.com/document/d/1eGBIxDn_loLG3P3Q0dV-TfLxiKe8z5OSJjAoUUxoOJ4/edit"><div class="subsection_button subsection_button_coding">Junior Research</div></a>
+        <a href="https://www.freecodecamp.com/ptaylor2018"><div class="subsection_button subsection_button_coding">Free Code Camp</div></a>
+        </div>
+        </div>
+        <div class="w3-content w3-display-container slideshow image_coding">
+
+            <img class="mySlides_coding mySlides" src="images/keypad.jpg" style="width:100%">
+            <img class="mySlides_coding mySlides" src="images/tsnumber.png" style="width:100%">
+            <img class="mySlides_coding mySlides" src="images/tribute.png" style="width:100%">
+
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs_coding(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs_coding(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex_coding = 1;
+            showDivs_coding(slideIndex_coding);
+
+            function plusDivs_coding(n) {
+                showDivs_coding(slideIndex_coding += n);
+            }
+
+            function showDivs_coding(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides_coding");
+                    if (n > x.length) {
+                        slideIndex_coding = 1;
+                    }
+                if (n < 1) {
+                    slideIndex_coding = x.length;
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex_coding-1].style.display = "block";
+            }
+        </script>
+        </div>
     </div>
-  </div>
-  <div  class="anchor about-sec" id="contact"></div>
- <div class="container-fluid">
-   <h2 class="text-center">Contact</h2>
-   <div class= "text-center">
-   <a href="https://www.facebook.com/profile.php?id=100010699749180" class="btn btn-default" target="_blank"><i class="fa fa-facebook-f"></i></a>
-   <a href="https://www.freecodecamp.com/ptaylor2018" class="btn btn-default" target="_blank"><i class="fa fa-fire"></i></a>
-   <a href="https://www.linkedin.com/in/patrick-taylor-647753124" class="btn btn-default" target="_blank"><i class="fa fa-linkedin"></i></a>
-   <a href="https://github.com/ptaylor2018" class="btn btn-default" target="_blank"><i class="fa fa-github"></i></a>
-   </div>
-   <footer class="text-center footer">Site made with some TLC by Patrick Taylor</footer>
-  </div>
-  </body>
+    <div class="spacer-2"></div>
+    <div class="subjectspace" id="stem">
+        <div class="nameplate" id=stemplate><h1 class="section-header">STEM</h1></div>
+        <div class="triangle" id ="stemtriangle"></div>
+        <div>
+        <div class="text_stem">
+        <div class="description"><p>I've done a great deal in STEM fields, including leading a robotics team, competing in Moody's Mega Math Challenge, building circuits, and doing fun math proofs.</p>
+        <a href="https://www.vexrobotics.com/"><div class="subsection_button subsection_button_stem">Robotics</div></a>
+        <a href="https://m3challenge.siam.org/"><div class="subsection_button subsection_button_stem">Math Modeling</div></a>
+        <a href="https://docs.google.com/document/d/1eGBIxDn_loLG3P3Q0dV-TfLxiKe8z5OSJjAoUUxoOJ4/edit"><div class="subsection_button subsection_button_stem">Junior Research</div></a>
+        <a href="https://docs.google.com/document/d/1J7Z-U8Wg5RtmCcmFj5h1fSlJdYpqh9lqrIHqcrTYchU/edit"><div class="subsection_button subsection_button_stem">Cutting Up Cake</div></a>
+        </div>
+        </div>
+        <div class="w3-content w3-display-container slideshow image_stem">
+            <img class="mySlides_stem mySlides" src="images/shook.jpg" style="width:100%">
+            <img class="mySlides_stem mySlides" src="images/winning.jpg" style="width:100%">
+            <img class="mySlides_stem mySlides" src="images/vex.jpg" style="width:100%">
+            <img class="mySlides_stem mySlides" src="images/playing_field.jpg" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs_stem(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs_stem(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex_stem = 1;
+            showDivs_stem(slideIndex_stem);
+
+            function plusDivs_stem(n) {
+                showDivs_stem(slideIndex_stem += n);
+            }
+
+            function showDivs_stem(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides_stem");
+                    if (n > x.length) {
+                        slideIndex_stem = 1;
+                    }
+                if (n < 1) {
+                    slideIndex_stem = x.length;
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex_stem-1].style.display = "block";
+            }
+        </script>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="subjectspace" id="music">
+        <div class="nameplate" id=musicplate><h1 class="section-header">Music</h1></div>
+        <div class="triangle" id ="musictriangle"></div>
+        <div>
+        <div class="text_music">
+        <div class="description"><p>I spend a lot of time playing instruments. I play the trumpet in two ensembles, both symphonic band and marching band, and the vibraphone with an indoor percussion ensemble. I also have experience playing the piano and ukulele.</p>
+
+
+        </div>
+        </div>
+        <div class="w3-content w3-display-container slideshow image_music">
+            <img class="mySlides_music mySlides" src="images/mbaccs.jpg" style="width:100%">
+            <img class="mySlides_music mySlides" src="images/mbparade.jpg" style="width:100%">
+            <img class="mySlides_music mySlides" src="images/indoorperc.jpg" style="width:100%">
+            <img class="mySlides_music mySlides" src="images/indoorpercform.jpg" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs_music(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs_music(1)">&#10095;</button>
+        </div>
+        <script>
+            var slideIndex_music = 1;
+            showDivs_music(slideIndex_music);
+
+            function plusDivs_music(n) {
+                showDivs_music(slideIndex_music += n);
+            }
+
+            function showDivs_music(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides_music");
+                    if (n > x.length) {
+                        slideIndex_music = 1;
+                    }
+                if (n < 1) {
+                    slideIndex_music = x.length;
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex_music-1].style.display = "block";
+            }
+        </script>
+        </div>
+    </div>
+    <div class="spacer-2"></div>
+
+    <div id="contact-zone">
+        <h1  class="contact-hero">Contact</h1>
+        <a href="mailto:taylor.patrick.e@gmail.com"><button id="email-button"><i class="fa fa-envelope-o fa-5x"></i></button></a>
+        <h1 class="contact-hero">Find me elsewhere!</h1>
+        <div class="elsewhere">
+
+            <a href="https://www.facebook.com/profile.php?id=100010699749180"><button class="elsebox"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i><p class="elsetext">Facebook</p></button></a>
+            <a href="https://www.instagram.com/patarack_/"><button class="elsebox"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i><p class="elsetext">Instagram</p></button></a>
+            <a href="https://www.linkedin.com/in/patrick-taylor-647753124/"><button class="elsebox"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i><p class="elsetext">LinkedIn</p></button></a>
+            <a href="https://github.com/ptaylor2018"><button class="elsebox"><i class="fa fa-github fa-5x" aria-hidden="true"></i><p class="elsetext">GitHub</p></button></a>
+            <a href="https://www.freecodecamp.com/ptaylor2018"><button class="elsebox"><i class="fa fa-free-code-camp fa-5x" aria-hidden="true"></i><p class="elsetext">FreeCodeCamp</p></button></a>
+            <a href="https://codepen.io/ptaylor2018/"><button class="elsebox"><i class="fa fa-codepen fa-5x" aria-hidden="true"></i><p class="elsetext">CodePen</p></button></a>
+            <a href="https://dribbble.com/ptaylor2018"><button class="elsebox"><i class="fa fa-dribbble fa-5x" aria-hidden="true"></i><p class="elsetext">Dribbble</p></button></a>
+           <a href="https://www.behance.net/ptlegoman44d5"><button class="elsebox"><i class="fa fa-behance-square fa-5x" aria-hidden="true"></i><p class="elsetext">Behance</p></button></a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
